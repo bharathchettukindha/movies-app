@@ -3,11 +3,7 @@ import React, { useState, useMemo } from 'react';
 const Watchlist = ({ movies, deleteMovie }) => {
   const [search, setSearch] = useState('');
   const [activeGenre, setActiveGenre] = useState('All');
-
-  // Get unique genres dynamically
   const genreList = useMemo(() => ['All', ...new Set(movies.map((m) => m.genre))], [movies]);
-
-  // Filter movies based on search and genre
   const filteredMovies = useMemo(() => {
     return movies.filter((movie) => {
       const title = movie.title?.toLowerCase() || '';
