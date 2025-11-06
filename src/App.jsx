@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Watchlist from './components/Watchlist';
 import Login from './components/Login';
-import Signup from './components/Signup.jsX'; 
+import Signup from "./components/Signup.jsx";
 
 function App() {
   const [watchlist, setWatchlist] = useState([]);
