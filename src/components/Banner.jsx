@@ -1,6 +1,4 @@
 import React from 'react';
-import logo from '../assets/logo1.webp';
-
 function Banner() {
   return (
     <div
